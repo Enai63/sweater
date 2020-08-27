@@ -24,8 +24,24 @@ public class Message {
         this.tag = tag;
     }
 
-    private String getAuthorName() {
+    public String getAuthorName() {
         return author != null ? author.getUsername() : "<none>";
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getText() {
+        return text;
     }
 
     public Integer getId() {
@@ -36,14 +52,6 @@ public class Message {
         this.id = id;
     }
 
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public String getTag() {
         return tag;
     }
@@ -52,11 +60,5 @@ public class Message {
         this.tag = tag;
     }
 
-    public User getAuthor() {
-        return author;
-    }
 
-    public void setAuthor(User author) {
-        this.author = author;
-    }
 }

@@ -72,7 +72,6 @@ public class User implements UserDetails {
     public void setPassword(String password) {
         this.password = password;
     }
-
     public boolean isActive() {
         return active;
     }
@@ -80,6 +79,7 @@ public class User implements UserDetails {
     public void setActive(boolean active) {
         this.active = active;
     }
+
 
     public Set<Role> getRoles() {
         return roles;
