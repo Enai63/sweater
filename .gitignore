@@ -3,4 +3,4 @@
 \target
 *.iml
 /upload/
-application.properties
+\sweater\src\main\resources\application.properties
